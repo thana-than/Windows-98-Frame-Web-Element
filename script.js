@@ -23,6 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.documentElement.style.setProperty('--title-color', validate_color(query_text_color));
     }
 
+
+    const query_background = params.get('background');
+    if (query_background) {
+        document.documentElement.style.setProperty('--background', validate_color(query_background));
+    }
+
     const query_scale = params.get('scale');
     if (query_scale) {
         document.documentElement.style.setProperty('--scale', query_scale);

@@ -9,6 +9,7 @@
     --title-color: #ffffff;
     --color-a: #000179;
     --color-b: #3F88D4;
+    --background: transparent;
 }
 
 @font-face {
@@ -21,7 +22,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: transparent;
+    background: var(--background);
     top: 0;
     left: 0;
 }
